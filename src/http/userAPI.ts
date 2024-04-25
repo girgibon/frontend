@@ -29,32 +29,32 @@ interface UserResponse {
 }
 
 export const registration = async (data: RegistrationData) => {
-    const response = await $host.post<any>('https://zct-app.azurewebsites.net/auth/registration', data);
+    const response = await $host.post<any>('https://zct-app.azurewebsites.net/auth/registration:5000', data);
     return response.data; 
 };
 
 export const login = async (data: LoginData) => {
-    const response = await $host.post<any>('https://zct-app.azurewebsites.net/auth/login', data);
+    const response = await $host.post<any>('https://zct-app.azurewebsites.net/auth/login:5000', data);
     return response.data 
 };
 
 export const getAllUsers = async () => {
-    const response = await $host.get<IUser[]>('https://zct-app.azurewebsites.net/users');
+    const response = await $host.get<IUser[]>('https://zct-app.azurewebsites.net/users:5000');
     return response.data; 
 };
 
 export const getAllEvents = async () => {
-    const response = await $host.get<any[]>('https://zct-app.azurewebsites.net/posts');
+    const response = await $host.get<any[]>('https://zct-app.azurewebsites.net/posts:5000');
     return response.data; 
 };
 
 export const createEventDb = async (data: EventData) => {
-    const response = await $host.post<any>('https://zct-app.azurewebsites.net/posts', data);
+    const response = await $host.post<any>('https://zct-app.azurewebsites.net/posts:5000', data);
     return response.data;
 };
 
 export const getIdByEmail = async (value: string) => {
-    const response = await $host.get<UserResponse[]>('https://zct-app.azurewebsites.net/users');
+    const response = await $host.get<UserResponse[]>('https://zct-app.azurewebsites.net/users:5000');
     const users = response.data
     const user = users.find(user => user.email === value);
     if (user) {
@@ -64,7 +64,7 @@ export const getIdByEmail = async (value: string) => {
 };
 
 export const createRole = async (data: RoleData) => {
-    const response = await $host.post<any>('https://zct-app.azurewebsites.net/roles', data);
+    const response = await $host.post<any>('https://zct-app.azurewebsites.net/roles:5000', data);
     return response.data;
 }
 
