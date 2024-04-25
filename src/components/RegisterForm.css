@@ -1,0 +1,34 @@
+.register-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.register-email-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.register-password-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.register-nickname-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
