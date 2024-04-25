@@ -37,7 +37,7 @@ export const AuthActionCreators = {
     registration: (email: string, password: string) => async (dispatch: AppDispatch) => {
         const admin = await getRoleByValue('ADMIN')
         const user = await getRoleByValue("USER")
-        if (!admin) {
+        if (!admin || !user) {
             createRole({value:"ADMIN", description:"Admin"})
             createRole({value:"USER", description:"User"}) 
         }

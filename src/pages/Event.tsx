@@ -13,7 +13,7 @@ const Event:FC = () => {
   const {user} = useTypedSelector(state => state.isAuth);
   useEffect(() => {
     fetchEvents(user.email)
-  }, [])
+  }, [fetchEvents, user.email])
 
   const addNewEvent = (event: IEvent) => {
     setModalOpen(false);

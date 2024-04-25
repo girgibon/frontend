@@ -1,8 +1,8 @@
 import { Dayjs } from "dayjs";
-import moment, { Moment } from "moment";
+import moment from "moment";
 import { convertDayjsToMoment } from "./date";
 
-export const rules = {
+const rules = {
     required: (message: string = "Required field") => ({
         required: true,
         message
@@ -17,3 +17,4 @@ export const rules = {
         }
     })
 }
+export default rules;
