@@ -1,6 +1,6 @@
 import { Form, Input, Row} from "antd";
 import React, { FC } from "react";
-import { rules } from "../utils/rules";
+import rules from "../utils/rules";
 import { DatePicker } from "antd";
 import { Button } from "antd";
 import { IEvent } from "../models/IEvent";
