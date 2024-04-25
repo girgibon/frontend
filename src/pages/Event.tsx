@@ -9,7 +9,7 @@ import { IEvent } from "../models/IEvent";
 const Event:FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const {createEvent, fetchEvents} = useActions()
-  const {guests, events} = useTypedSelector(state => state.event)
+  const {events} = useTypedSelector(state => state.event)
   const {user} = useTypedSelector(state => state.isAuth);
   useEffect(() => {
     fetchEvents(user.email)

@@ -1,7 +1,7 @@
 import React from "react";
 import Login from "../pages/Login";
 import Event from "../pages/Event";
-import ActiveTask from "../pages/ActiveTask"; // Импортируем компонент для страницы с актуальными задачами
+import ActiveTask from "../pages/ActiveTask";
 
 import RegisterForm from "../components/RegisterForm";
 

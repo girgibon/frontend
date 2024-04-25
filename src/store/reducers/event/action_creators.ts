@@ -1,10 +1,8 @@
-import axios from "axios";
 import { AppDispatch } from "../..";
 import { IEvent } from "../../../models/IEvent";
 import { IUser } from "../../../models/IUser";
 import { EventActionEnum, SetGuestsAction, SetEventsAction } from "./types";
 import UserService from "../../../api/UserService";
-import { responsiveArray } from "antd/es/_util/responsiveObserver";
 import { createEventDb, getAllEvents } from "../../../http/userAPI";
 import { getIdByEmail } from "../../../http/userAPI";
 

@@ -10,7 +10,7 @@ import { IUser } from "./models/IUser";
 const App:FC = () => {
   const {setUser, setIsAuth} = useActions()
   useEffect(() => {
-    if (localStorage.getItem('auth')) {
+    if (localStorage.getItem('isAuth')) {
       setUser({email: localStorage.getItem('email' || '')} as IUser)
       setIsAuth(true);
     }

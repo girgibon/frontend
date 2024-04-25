@@ -1,12 +1,10 @@
-import { Form, Input, Row, Select } from "antd";
+import { Form, Input, Row} from "antd";
 import React, { FC } from "react";
 import { rules } from "../utils/rules";
 import { DatePicker } from "antd";
 import { Button } from "antd";
-import { IUser } from "../models/IUser";
 import { IEvent } from "../models/IEvent";
 import { useState } from "react";
-import { Moment } from "moment";
 import { formatDate } from "../utils/date";
 import { useTypedSelector } from "../hooks/useTypedSelector";
 import { Dayjs } from "dayjs";

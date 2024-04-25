@@ -4,7 +4,6 @@ import { rules } from '../utils/rules';
 import { useTypedSelector } from "../hooks/useTypedSelector";
 import { useActions } from "../hooks/useActions";
 import './RegisterForm.css';
-import { registration } from "../http/userAPI";
 
 const RegisterForm: FC = () => {
     const { error, isLoading } = useTypedSelector(state => state.isAuth);

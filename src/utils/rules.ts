@@ -1,5 +1,4 @@
 import { Dayjs } from "dayjs";
-import dayjs from "dayjs";
 import moment, { Moment } from "moment";
 import { convertDayjsToMoment } from "./date";
 

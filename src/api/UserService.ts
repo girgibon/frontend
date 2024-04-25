@@ -1,4 +1,3 @@
-import axios, { AxiosResponse } from "axios";
 import { IUser } from "../models/IUser";
 import { getAllUsers } from "../http/userAPI";
 

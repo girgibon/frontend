@@ -1,5 +1,4 @@
-import { $authHost, $host } from ".";
-import { IEvent } from "../models/IEvent";
+import { $host } from ".";
 import { IUser } from "../models/IUser";
 
 interface RegistrationData {

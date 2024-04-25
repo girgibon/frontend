@@ -1,10 +1,8 @@
 import React, { FC, useState } from "react";
 import {Button, Form, Input} from "antd";
 import { rules } from "../utils/rules";
-import { AuthActionCreators } from "../store/reducers/auth/action-creators";
 import { useTypedSelector } from "../hooks/useTypedSelector";
 import { useActions} from "../hooks/useActions";
-import { login } from "../http/userAPI";
 
 
 const LoginForm: FC = () => {
